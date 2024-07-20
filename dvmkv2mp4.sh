@@ -17,7 +17,7 @@ while true; do
                         echo $file_dir
                         # docker run -it -u $(id -u):$(id -g) --rm -v "$file_dir:/convert" dvmkv2mp4 -l und,eng -r # REMOVE -it for synology - no TTY
                         docker run -u $(id -u):$(id -g) --rm -v "$file_dir:/convert" dvmkv2mp4 -l und,eng # REMOVE -it for synology - no TTY
-                        exit
+                        exit 0
                         
                 else
                         echo "NOT same file size of $file_path, sleeping"
