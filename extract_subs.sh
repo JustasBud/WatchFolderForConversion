@@ -46,7 +46,7 @@ if [ -e "$file_path" ]; then
                         IFS=$OLDIFS
 
                         echo 'Extract complete'
-                        exit
+                        exit 0
                 else
                         echo "NOT same file size of $file_path, sleeping"
                         sleep 5  # Adjust the sleep duration as needed
